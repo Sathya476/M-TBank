@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mastery</title>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="asgn2.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+ </head>
+<body>
+	<nav>
+	    <ul>
+	        <li><a href="mastery.html">Mastery</a></li>
+	        <li><a href="segment.html">Segments</a></li>
+	    </ul>
+	</nav>
+	<form>
+		<fieldset>
+			<legend><h3>Mastery</h3></legend>
+			<div class="mastery">
+				<b>Percentage1</b><br>
+				<input type="number" name="value1" min="0" max="100" placeholder="enter value" ><br>
+				<b>Percentage2</b><br>
+				<input type="number" name="value2" min="0" max="100" placeholder="enter value" ><br>
+				<b>Percentage3</b><br>
+				<input type="number" name="value3" min="0" max="100" placeholder="enter value" ><br>
+				<b>Percentage4</b><br>
+				<input type="number" name="value4" min="0" max="100" placeholder="enter value" ><br>
+				<b>Percentage5</b><br>
+				<input type="number" name="value5" min="0" max="100" placeholder="enter value" >
+			</div>
+			<br>
+			<br>
+			<b>Assessment Type</b><br>
+			<input list="assesment">
+			<datalist id="assesment">
+				<option value="Homework"></option>	
+				<option value="Quiz"></option>
+				<option value="Exam"></option>
+				<option value="Poll"></option>				
+			</datalist>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend><h3>Assessment details</h3></legend>
+				<div class="modes">
+					<b>Offer Mode</b><br>
+					<select>
+						<option value="select">Please select</option>
+						<option value="assigned">Assigned only</option>
+						<option value="offered">Offer Mode</option>
+					</select><br>
+					<b>Retake Policy</b><br>
+					<select>
+						<option value="select">Please select</option>
+						<option value="once">Once_only</option>
+						<option value="twice">Twice_only</option>
+						<option value="nolimit">No_limit</option>
+						<option value="perday">Once per day only</option>
+					</select><br>
+					<b>Validation Mode</b><br>
+					<select>
+						<option value="select">Please select</option>
+						<option value="onsubmit">Show answer on Submit</option>
+						<option value="onclose">Show answer on Close</option>
+					</select>
+				</div>
+				<br>
+				<br>
+				<div class="name">
+					<b>Assessment Name</b>
+					<br>
+					<input type="text" name="assignmentname" placeholder="Please enter Assignment Name">
+					<br>
+					<b>Duration</b>
+					<br>
+					<input type="text" name="duration" placeholder="30 minutes"><br>
+				</div>
+				<br>
+				<br>
+				<div class="datetime">
+					<b>Start date and time</b>
+					<br>
+					<input type="date" name="startdate">
+					<a href=#><span class="fa fa-calendar"></span></a>&nbsp;
+					<label for="hour"></label>
+		    		<select id="hour" name="hour">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>							
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>hr
+					&nbsp;
+					<label for="minute"></label>
+		    		<select id="minute" name="minute">
+						<option value="0">0</option>
+						<option value="5">5</option>
+						<option value="10">10</option>
+						<option value="15">15</option>
+						<option value="20">20</option>
+						<option value="25">25</option>
+						<option value="30">30</option>
+						<option value="35">35</option>
+						<option value="40">40</option>
+						<option value="45">45</option>
+						<option value="50">50</option>
+						<option value="55">55</option>
+					</select>min
+					&nbsp;
+					<label for="zone"></label>
+					<select id="zone" name="zone">
+						<option value="am">AM</option>
+						<option value="pm">PM</option>
+					</select>
+					<br>
+					<br>
+					<b>Close date and Time</b>
+					<br>
+					<input type="date" name="closedate">
+					<a href=#><span class="fa fa-calendar"></span></a>
+					&nbsp;
+					<label for="hour"></label>
+					<select id="hour" name="hour">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>hr 
+					&nbsp;
+					<label for="minute"></label>
+		    		<select id="minute" name="minute">
+						<option value="0">0</option>
+						<option value="5">5</option>
+						<option value="10">10</option>
+						<option value="15">15</option>
+						<option value="20">20</option>
+						<option value="25">25</option>
+						<option value="30">30</option>
+						<option value="35">35</option>
+						<option value="40">40</option>
+		  				<option value="45">45</option>
+						<option value="50">50</option>
+						<option value="55">55</option>
+						</select>min
+						&nbsp;
+						<label for="zone"></label>
+						<select id="zone" name="zone">
+							<option value="am">AM</option>
+							<option value="pm">PM</option>
+						</select>
+				</div>
+				<br>
+				<br>
+				self efficiency : <input type="checkbox" name="box" ></p>
+		</fieldset>
+		<fieldset>
+			<legend><h3>Sections</h3></legend>
+			<div class="datetime">
+			<p><b>Class section</b></p>
+			<!--<div style="display:hidden">-->
+			<select>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+				</select>
+				<br>
+				<b>Open date and time</b>
+				<br>
+				<input type="date" name="opendate">
+				<a href=#><span class="fa fa-calendar"></span></a>&nbsp;
+				<label for="hour"></label>
+	    		<select id="hour" name="hour">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>							
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>hr
+				&nbsp;
+				<label for="minute"></label>
+			    <select id="minute" name="minute">
+					<option value="0">0</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+					<option value="25">25</option>
+					<option value="30">30</option>
+					<option value="35">35</option>
+					<option value="40">40</option>
+					<option value="45">45</option>
+					<option value="50">50</option>
+					<option value="55">55</option>
+				</select>min
+				&nbsp;
+				<label for="zone"></label>
+				<select id="zone" name="zone">
+						<option value="am">AM</option>
+						<option value="pm">PM</option>
+				</select>
+				<br>
+				<br>
+				<b>End date and Time</b>
+				<br>
+				<input type="date" name="closedate">
+				<a href=#><span class="fa fa-calendar"></span></a>
+				&nbsp;
+				<label for="hour"></label>
+				<select id="hour" name="hour">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>hr 
+				&nbsp;
+				<label for="minute"></label>
+				<select id="minute" name="minute">
+					<option value="0">0</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+					<option value="25">25</option>
+					<option value="30">30</option>
+					<option value="35">35</option>
+					<option value="40">40</option>
+					<option value="45">45</option>
+					<option value="50">50</option>
+					<option value="55">55</option>
+				</select>min
+				&nbsp;
+				<label for="zone"></label>
+				<select id="zone" name="zone">
+					<option value="am">AM</option>
+					<option value="pm">PM</option>
+				</select>
+	
+				<p><b>Class section</b></p>
+				<select>
+					<option value="AB">AB</option>
+					<option value="A">A</option>
+					<option value="B">B</option>
+				</select>
+				<br>
+				<b>Open date and time</b>
+				<br>
+				<input type="date" name="opendate">
+				<a href=#><span class="fa fa-calendar"></span></a>&nbsp;
+				<label for="hour"></label>
+	    		<select id="hour" name="hour">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>							
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>hr
+				&nbsp;
+				<label for="minute"></label>
+			    <select id="minute" name="minute">
+					<option value="0">0</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+					<option value="25">25</option>
+					<option value="30">30</option>
+					<option value="35">35</option>
+					<option value="40">40</option>
+					<option value="45">45</option>
+					<option value="50">50</option>
+					<option value="55">55</option>
+				</select>min
+				&nbsp;
+				<label for="zone"></label>
+				<select id="zone" name="zone">
+						<option value="am">AM</option>
+						<option value="pm">PM</option>
+				</select>
+				<br>
+				<br>
+				<b>End date and Time</b>
+				<br>
+				<input type="date" name="closedate">
+				<a href=#><span class="fa fa-calendar"></span></a>
+				&nbsp;
+				<label for="hour"></label>
+				<select id="hour" name="hour">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>hr 
+				&nbsp;
+				<label for="minute"></label>
+				<select id="minute" name="minute">
+					<option value="0">0</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+					<option value="25">25</option>
+					<option value="30">30</option>
+					<option value="35">35</option>
+					<option value="40">40</option>
+					<option value="45">45</option>
+					<option value="50">50</option>
+					<option value="55">55</option>
+				</select>min
+				&nbsp;
+				<label for="zone"></label>
+				<select id="zone" name="zone">
+					<option value="am">AM</option>
+					<option value="pm">PM</option>
+				</select>
+			</div>
+			</fieldset>
+		</div>
+	</form>
+	<br>
+	<p style="float: right;"><a href="segment.html" class="next">Next &raquo;</a></p>
+				
+		
+	</form>
+</body>
+</html>
